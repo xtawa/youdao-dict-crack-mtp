@@ -1,0 +1,21 @@
+{
+  "verified_at": "2026-10-16 Asia/Shanghai",
+  "device": "Youdao X7 Pro",
+  "firmware": "4.34.0",
+  "method": "MTP path traversal via Windows WPD",
+  "before": {
+    "status": "locked",
+    "mtp_available": true,
+    "writes": 0
+  },
+  "unlock": {
+    "status": "unlocked",
+    "identity": "uid=0(root) gid=0(root) groups=0(root)",
+    "proof": "Firmware:\r\r\nDictPen_APP:\r\r\nBuild_Time:Tue Jun  2 20:36:38 CST 2026\r\r\nVersion: 4.34.0\r\r\n-rw-rw-r-- 1 root root 0 Oct 16 22:44 /tmp/.adb_auth_verified\r\r\ntmpfs",
+    "scope": "temporary marker only; firmware and password unchanged"
+  },
+  "independent_adb_id": "uid=0(root) gid=0(root) groups=0(root)",
+  "reboot_tested": false,
+  "firmware_modified": false,
+  "password_modified": false
+}
