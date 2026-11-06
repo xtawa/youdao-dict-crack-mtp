@@ -1,4 +1,4 @@
-"""Temporary MTP-based ADB unlock, verified on Youdao X7 Pro PenOS 4.34.0.
+"""Temporary MTP-based ADB unlock for X7 Pro.
 
 Reference: https://github.com/orgs/PenUniverse/discussions/311
 Uses Windows WPD, does not replace USB drivers or alter firmware/passwords.
@@ -62,7 +62,7 @@ def main():
     if 'uid=0(root)' not in after:
         print(json.dumps({'status': 'not_unlocked', 'adb_response': after}))
         return 2
-    proof = adb_shell('cat /Version; ls -l /tmp/.adb_auth_verified; stat -f -c %T /tmp')
+    proof = adb_shell('ls -l /tmp/.adb_auth_verified; stat -f -c %T /tmp')
     print(json.dumps({'status': 'unlocked', 'identity': after, 'proof': proof,
                       'scope': 'temporary marker only; firmware and password unchanged'}))
     return 0
