@@ -1,4 +1,4 @@
-"""Temporary MTP-based ADB unlock for X7 Pro.
+"""Temporary MTP-based ADB unlock for supported devices.
 
 Reference: https://github.com/orgs/PenUniverse/discussions/311
 Uses Windows WPD, does not replace USB drivers or alter firmware/passwords.

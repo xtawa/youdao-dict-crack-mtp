@@ -15,7 +15,7 @@
 
 ## 屏蔽系统更新
 
-先解锁adb，然后将```tools```文件夹里面的```x7pro-ota-block```文件夹push到词典笔，在adb shell里面执行 ```control.sh enable``` 即可屏蔽
+先解锁 ADB，将 `tools/ota-block` 目录中的脚本复制到设备的 `/userdata/ota-block` 目录，再通过 ADB Shell 执行 `cd /userdata/ota-block && sh control.sh enable` 即可屏蔽。
 * ```control.sh restore```恢复
 * ```control.sh status```查看状态
 

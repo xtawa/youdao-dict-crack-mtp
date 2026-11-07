@@ -1,6 +1,6 @@
 @echo off
 setlocal
-python "%~dp0unlock_x7pro.py" --unlock
+python "%~dp0unlock_mtp.py" --unlock
 set "UNLOCK_EXIT=%ERRORLEVEL%"
 echo.
 if "%UNLOCK_EXIT%"=="0" echo ADB is ready. Run: adb -d shell
